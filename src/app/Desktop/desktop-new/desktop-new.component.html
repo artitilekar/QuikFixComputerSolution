@@ -1,0 +1,53 @@
+<app-title-breadcrumb
+  [pageTitle]="'New Desktops'"
+  [breadcrumb]="'New Desktops'"
+></app-title-breadcrumb>
+
+<div class="latest-blog">
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title-all text-center">
+          <h1>Buy New Laptops of All Brand | Quik Fix Computer Solutions</h1>
+          <p>
+            Looking for New laptops ? Browse great deals ! CALL or WHATSAPP
+            0000000000 for best deals & detail specification
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- row-1 -->
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4" *ngFor="let desktop of desktops">
+        <div class="blog-box">
+          <div class="blog-content">
+            <div class="title-blog">
+              <h2>{{ desktop.title }}</h2>
+              <span
+                >{{ desktop.specification }}
+                <!-- • COREI3 10TH GEN <br />
+                • 4GB DDR4 RAM <br />
+                • 1TB HDD <br />
+                • 18.5″ LED CREEN <br />
+                • WIN10 SL+ MSOFFICE LICENCE <br />
+                • KBB+MOUSE <br />
+                • WIFI/BT <br />
+                • 3 YR WARRANTY <br />
+                • RS 42000/-ALL WITH GST -->
+              </span>
+              <div class="price-box-bar">
+                <div class="cart-and-bay">
+                  <a class="btn hvr-hover" data-fancybox-close="" href="#"
+                    >WhatsApp for <br />
+                    Enquiry</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

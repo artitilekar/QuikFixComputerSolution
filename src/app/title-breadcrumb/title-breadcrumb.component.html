@@ -1,0 +1,17 @@
+<!-- title-breadcrumb.component.html -->
+<div class="all-title-box">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>{{ pageTitle }}</h2>
+        <ul class="breadcrumb">
+          <!-- Conditionally render the Home breadcrumb link -->
+          <li *ngIf="showHomeBreadcrumb" class="breadcrumb-item">
+            <a routerLink="/">Home</a>
+          </li>
+          <li class="breadcrumb-item active">{{ breadcrumb }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

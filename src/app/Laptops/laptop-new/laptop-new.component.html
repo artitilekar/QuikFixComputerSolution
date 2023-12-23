@@ -1,0 +1,40 @@
+<app-title-breadcrumb
+  [pageTitle]="'New Laptops'"
+  [breadcrumb]="'New Laptops'"
+></app-title-breadcrumb>
+
+<div class="latest-blog">
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title-all text-center">
+          <h1>Buy New Laptops of All Brand | Quik Fix Computer Solutions</h1>
+          <p>
+            Looking for New laptops? Browse great deals! CALL or WHATSAPP
+            0000000000 for the best deals & detail specification
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4" *ngFor="let laptop of laptops">
+        <div class="blog-box">
+          <div class="blog-content">
+            <div class="title-blog">
+              <h2>{{ laptop.title }}</h2>
+              <span>{{ laptop.specification }}</span>
+              <div class="price-box-bar">
+                <div class="cart-and-bay">
+                  <a class="btn hvr-hover" data-fancybox-close="" href="#"
+                    >WhatsApp for Enquiry</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
